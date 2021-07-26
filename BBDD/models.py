@@ -57,7 +57,7 @@ class TipoPago(models.Model):
 
 
 class HistPago(models.Model):
-    Pago = models.OneToOneField(TipoPago, on_delete=models.CASCADE)
+    Pago = models.ForeignKey(TipoPago, on_delete=models.CASCADE)
     Alumno = models.ForeignKey(Alumno, on_delete=models.CASCADE)
     Pagado = models.BooleanField()
     
