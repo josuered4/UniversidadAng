@@ -23,7 +23,13 @@ def addRegisPago(request):
             form = HistPagoForm(request.POST)
             if form.is_valid():
                 form.save()
-                return redirect("/histpagos")    
+                matricula = form['Alumno']
+                matricula = matricula.value()
+                Alumnos = Alumno.objects.get(id = matricula)
+                matricula = Alumnos.Matricula
+                HistPago.alumno = Alumno.objects.get(Matricula = matricula)
+                
+                return redirect("histpagos", HistPago.alumno)    
         else:
             form = HistPagoForm()#se crea un formulario separado   
             return render(request, "histPagos/AddRegAlumno.html", {'form':form, 'accion':'Añadir'})
@@ -38,9 +44,12 @@ def editRegisPago(request, pk, matricula):#Edicion de alumnos, se pide la llave 
         form = HistPagoForm(request.POST, instance = pago) # se toma el fomulario con las modificaciones
         if form.is_valid():#se verifica si es valido 
             form.save()#se guarde el formulario
-            print(form)
+           
             matricula = matricula
             return redirect("histpagos",matricula)#se redirecciona una ves guardado el formulario
 
     return render (request, "histPagos/AddRegAlumno.html", {'form':form, 'accion':'Editar'}) 
+
+
+
 

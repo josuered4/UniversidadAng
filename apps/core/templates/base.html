@@ -59,10 +59,9 @@
             <div class="menu" >
             <a href="{% url 'addAlumno' %}" class="d-block text-light p-3 lead " id="enlace"><i class="fas fa-user-plus mr-2 "  ></i>Añadir Alumno</a>
                 <a href="{% url 'addcarreras' %}" class="d-block text-light p-3 lead " id="enlace"><i class="fas fa-folder-plus mr-2 "></i>Añadir carrera</a>
-                <a href="/" class="d-block text-light p-3 lead " id="enlace"><i class="fas fa-search mr-2"></i>Busqueda de Historiales</a>
-                <a href="/" class="d-block text-light p-3 lead " id="enlace"><i class="fas fa-plus-circle mr-2"></i>Agregar Pago</a>
-                <a href="/" class="d-block text-light p-3 lead " id="enlace"><i class="fas fa-history mr-2"></i>Buscar Historial de Pagos</a>
-                <a href="/" class="d-block text-light p-3 lead " id="enlace"><i class="fas fa-plus-circle mr-2"></i>Pago Adicional</a>
+                <a href="{% url 'addRegisPago' %}" class="d-block text-light p-3 lead " id="enlace"><i class="fas fa-plus-circle mr-2"></i>Agregar Pago</a>
+                <a href="{% url 'addpagos' %}" class="d-block text-light p-3 lead " id="enlace"><i class="fas fa-plus-circle mr-2"></i>Agregar Tipo Pago </a>
+                <a href="{% url 'pagos' %}" class="d-block text-light p-3 lead " id="enlace"><i class="fas fa-history mr-2"></i>Visualizar Tipos de Pagos</a>
             </div>
         </div>
 

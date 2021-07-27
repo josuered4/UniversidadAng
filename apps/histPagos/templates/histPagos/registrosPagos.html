@@ -8,7 +8,7 @@
     <body>
         {% block body %}
             <h1>Historial de Pagos</h1>
-                <a href="/"><button class="btn btn-primary" type="submit" style="font-size: 15px;">Añadir Pago</button></a>
+                <a href="{% url 'addRegisPago'  %}"><button class="btn btn-primary" type="submit" style="font-size: 15px;">Añadir Pago</button></a>
     <!-- Esta es la tabla de carreras -->
     
             <table class="table table-bordered table-striped scrol display  "  id="example">
