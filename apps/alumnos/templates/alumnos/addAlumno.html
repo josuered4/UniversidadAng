@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Registrar alimno{% endblock %}
+
+{% block content %}
+
+
+
+<div style="text-align:center;"> 
+
+<h1 style="color: rgb(47, 83, 47);">Añadir alumnos</h1>
+<form method = 'POST'>
+    <Table class="table table-bordered">
+    {% csrf_token %}
+    {{form.as_table}}
+
+    </Table>
+    
+    <button class="btn-primary"  onclick="salir()" >{{accion}}</button>
+</form>
+</div>
+
+  
+  
+
+{% endblock %}

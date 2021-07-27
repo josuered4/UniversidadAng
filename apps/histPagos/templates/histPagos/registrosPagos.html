@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Registro de Pagos{% endblock %}
+
+{% block content %}
+    <body>
+        {% block body %}
+            <h1>Historial de Pagos</h1>
+                <a href="{% url 'addRegisPago'  %}"><button class="btn btn-primary" type="submit" style="font-size: 15px;">Añadir Pago</button></a>
+    <!-- Esta es la tabla de carreras -->
+    
+            <table class="table table-bordered table-striped scrol display  "  id="example">
+                <thead class="table-dark">
+                    <tr>
+                    <th>Nombre</th>
+                    <th>Pago Competado</th>
+                    <th>Editar Pagos</th>
+                    
+                    </tr>
+                </thead>
+        <!--For para los datos en la tabla-->
+                <tbody>
+                {% for pago in pagos %}
+                    <tr>
+                    <td>{{pago.Pago}}</td>
+                    {% if pago.Pagado == True %}
+                    <td>Si</td>
+                    {% else %}
+                        <td>No</td>
+                    {% endif %}
+                    <td><a href="/editRegisPago/{{pago.id}}/{{pago.Alumno}}/" ><button class="btn btn-primary" type="submit" style="font-size: 15px;">Editar</button></a><td>
+                    </tr>
+                {% endfor %}
+                <p> </p>
+                <p> </p>
+                </tbody>
+            {% endblock body %}
+    </body>
+
+{% endblock %}
