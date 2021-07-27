@@ -16,23 +16,25 @@
                     <tr>
                     <th>Nombre</th>
                     <th>Pago Competado</th>
+                    <th>Editar Pagos</th>
                     
                     </tr>
                 </thead>
         <!--For para los datos en la tabla-->
                 <tbody>
-                    {% for pago in pagos %}
-            
-                <tr>
+                {% for pago in pagos %}
+                    <tr>
                     <td>{{pago.Pago}}</td>
                     {% if pago.Pagado == True %}
                     <td>Si</td>
                     {% else %}
                         <td>No</td>
                     {% endif %}
-                </tr>
-            
+                    <td><a href="/editRegisPago/{{pago.id}}/{{pago.Alumno}}/" ><button class="btn btn-primary" type="submit" style="font-size: 15px;">Editar</button></a><td>
+                    </tr>
                 {% endfor %}
+                <p> </p>
+                <p> </p>
                 </tbody>
             {% endblock body %}
     </body>
