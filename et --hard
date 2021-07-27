@@ -1,0 +1,90 @@
+[33mcommit 2a4d3e5065b90009e6417a4cc8fd776b3bce011e[m[33m ([m[1;36mHEAD -> [m[1;32mjosuered[m[33m)[m
+Author: “josuered4” <“josuered4@gmail.com”>
+Date:   Mon Jul 26 22:21:23 2021 -0500
+
+    2.0.0
+
+[33mcommit 2972cf50fd3f546ff3c68e08ae3ac2554364aada[m
+Author: “josuered4” <“josuered4@gmail.com”>
+Date:   Mon Jul 26 20:21:20 2021 -0500
+
+    1.0.1
+
+[33mcommit 5cbfc0c0ad84f2762612bf0cbf7b24c769fb721a[m
+Author: “josuered4” <“josuered4@gmail.com”>
+Date:   Sun Jul 25 20:40:43 2021 -0500
+
+    1.0.0
+
+[33mcommit cfa4cb3692147d2fee55fd13dcd802e358bcb6c8[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: josuered4 <62432284+josuered4@users.noreply.github.com>
+Date:   Sun Jul 25 20:13:14 2021 -0500
+
+    Modulo-HistorialPagos
+
+[33mcommit 98e842815694ad32628b166fc25c7f8c0f423115[m
+Author: josuered4 <62432284+josuered4@users.noreply.github.com>
+Date:   Sun Jul 25 20:12:44 2021 -0500
+
+    Modulo-Pagos
+
+[33mcommit 06939c65a65738eb33d56886388ed3e2a7c0066b[m
+Author: Manesstark <mane.pumas.20@gmail.com>
+Date:   Sun Jul 25 20:02:02 2021 -0500
+
+    Modulo Carreras
+    
+    Estas son las carreras mijo
+
+[33mcommit c8e1b75f88772d4a6720f935c281126fa2d09545[m
+Author: Alejando-Deid <68569529+Alejando-Deid@users.noreply.github.com>
+Date:   Sun Jul 25 18:56:25 2021 -0500
+
+    MODULOS DE DISEÑOS
+    
+    se hicieron actualizaciones.
+
+[33mcommit 5a6d0728ea00382f504beb506ea7cc68fd383fa2[m
+Author: JoelGithubAccount <81830107+JoelGithubAccount@users.noreply.github.com>
+Date:   Sun Jul 25 18:50:14 2021 -0500
+
+    Modulo-Alumnos
+
+[33mcommit 70a1bd594d370430d0dc631a4ece0264d988e571[m
+Author: Mauricio <mauriciogarciagarcia37@gmail.com>
+Date:   Sun Jul 25 18:15:45 2021 -0500
+
+    Implementacion DB
+
+[33mcommit ebaf73ea386f4b69c1399b5428a3a5735e6c6f3e[m
+Author: Joel Brayan <packz369@gmail.com>
+Date:   Thu Jul 1 22:35:38 2021 -0500
+
+    Implementacion de Login
+
+[33mcommit 946757198e948f765dab1c55d96b17c6a745da60[m
+Merge: a3067a5 ab492b8
+Author: “josuered4” <“josuered4@gmail.com”>
+Date:   Fri Jun 11 21:54:04 2021 -0500
+
+    Merge branch 'master' of https://github.com/josuered4/UniversidadAng
+
+[33mcommit a3067a5f9fb60043a375a0aeef763bcfb91cf71a[m
+Author: “josuered4” <“josuered4@gmail.com”>
+Date:   Fri Jun 11 20:38:22 2021 -0500
+
+    carpeta apps
+
+[33mcommit ab492b85665b220af5288d794d3a3182274bb344[m
+Author: josuered4 <62432284+josuered4@users.noreply.github.com>
+Date:   Fri Jun 11 20:30:06 2021 -0500
+
+    creacion de readme
+    
+    Se creo el Readme.
+
+[33mcommit 29ee95b7e259e65017611e26ef3bac2fe3a4bced[m
+Author: “josuered4” <“josuered4@gmail.com”>
+Date:   Fri Jun 11 20:22:38 2021 -0500
+
+    Primer commit de la rama master
