@@ -8,3 +8,5 @@ class HistPagoForm(forms.ModelForm):
         fields = '__all__'
 
 
+class Busqueda(forms.Form):
+    matricula = forms.CharField(max_length = 150)

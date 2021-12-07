@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from BBDD.models import HistPago
-from .forms import HistPagoForm
+from .forms import HistPagoForm, Busqueda
 from BBDD.models import Alumno
 
 # Create your views here.
@@ -52,4 +52,11 @@ def editRegisPago(request, pk, matricula):#Edicion de alumnos, se pide la llave 
 
 
 
-
+def searchHistorial(request):
+    if request.user.is_authenticated:
+        form = Busqueda()
+        return render(request, 'histPagos/busqueda.html', {'form':form})
+        
+    else:
+        return redirect('/home')
+    
