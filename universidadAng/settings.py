@@ -44,11 +44,11 @@ INSTALLED_APPS = [
     'apps.pagos',
     'apps.histPagos',
 
-    'crispy_forms',
+    
 
 ]
 
-CRISPY_TEMPLATE_PACK = 'bootstrap5'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
