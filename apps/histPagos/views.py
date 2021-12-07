@@ -25,11 +25,14 @@ def addRegisPago(request):
                 form.save()
                 matricula = form['Alumno']
                 matricula = matricula.value()
-                Alumnos = Alumno.objects.get(id = matricula)
-                matricula = Alumnos.Matricula
-                HistPago.alumno = Alumno.objects.get(Matricula = matricula)
-                
-                return redirect("histpagos", HistPago.alumno)    
+                #Alumnos = Alumno.objects.get(id = matricula)
+                #matricula = Alumnos.Matricula
+                #HistPago.alumno = Alumno.objects.get(Matricula = matricula)
+                #print(HistPago.alumno)
+                nombre = form['Pago']
+                nombre = nombre.value()
+                return redirect("imprimePdf", matricula, nombre)
+                #return redirect("histpagos", HistPago.alumno)    
         else:
             form = HistPagoForm()#se crea un formulario separado   
             return render(request, "histPagos/AddRegAlumno.html", {'form':form, 'accion':'Añadir'})

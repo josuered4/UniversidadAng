@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.views.generic.base import TemplateView
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('apps.core.urls')),
@@ -24,6 +25,7 @@ urlpatterns = [
     path('', include('apps.carreras.urls')),
     path('', include('apps.pagos.urls')),
     path('', include('apps.histPagos.urls')),
+    path('', include('apps.pdf.urls')),
     path('', include('pwa.urls')),
     
 ]

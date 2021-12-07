@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'apps.carreras',
     'apps.pagos',
     'apps.histPagos',
+    'apps.pdf',
 
     'pwa',
     
