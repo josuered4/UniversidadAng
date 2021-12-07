@@ -8,6 +8,9 @@
 
 
 
+
+
+
 <div class="container" id="contenedor">
 
   <h1 style="color: rgb(155, 155, 155); text-align: center;">Añadir Carreras</h1>
@@ -54,41 +57,17 @@
   </div>
   
 </div>
-<div>
-  <br></div>
-</div>
+
 
 <div class="container" id="contenedor">
 
-  <h1 style="color: rgb(155, 155, 155); text-align: center;">Añadir Carrera</h1>
-  
-  <table class="table table-dark table-hover " id="mytable">
-      <thead>
-        <tr>
-        </tr>
-      </thead>
-      <tbody>
-        {% for iteam in form %}
-        <tr>
-          <th scope="row">{{iteam.name}} :</th>
-          <td>{{iteam}}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-
-
-
-  
-</div>
-
-<div class="container" id="contenedor">
-
-  <h1 style="color: rgb(155, 155, 155); text-align: center;">Alumnos Registrados</h1>
+  <h1 style="color: rgb(155, 155, 155); text-align: center;">Registrar Carrera</h1>
   <div class="table-responsive"> 
   <table class="table table-dark table-hover " id="mytable">
       <thead>
       </thead>
+      <form  method="post">
+        {% csrf_token %}
       <tbody>
         {% for iteam in form %}
         <tr>
@@ -96,8 +75,13 @@
           <td>{{iteam}}</td>
         </tr>
         {% endfor %}
+        
       </tbody>
     </table>
+    <div style="text-align:center">
+    <button type="submit" class="btn btn-primary" position-cernter >Registrar</button>
+  </div>  
+    </form>
 
 
   </div>
@@ -111,18 +95,6 @@
 
 
 <!-- solicitar datoss-->
-    <form method="post" style="margin-left: 20px;">
-        <Table class="table table-bordered">
-        {% csrf_token %}
-        {{ form.as_table }}
-        </Table>
-        <button  class="btn btn-primary">Añadir Carrera o  editar</button>
-
-
-
-        
-
-
-</form>
+  
 
 {% endblock %}
