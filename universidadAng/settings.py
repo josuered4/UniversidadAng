@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -133,20 +134,23 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-PWA_APP_NAME = 'UniversidadAng'
-PWA_APP_DESCRIPTION = "Pagina de la Universidad de los Angeles"
+PWA_APP_NAME = "UniversidadAng"
+PWA_APP_DESCRIPTION = "Sitio Web de la Universidad de los Angeles"
 PWA_APP_THEME_COLOR ="#1c4a81"
 PWA_APP_BACKGROUND_COLOR  = "#1c4a81"
 
 PWA_APP_ICONS = [
     {
-        'scr':'apps/core/static/img/UA.png',
-        'sizes': '160x160'
+        "scr":"/static/img/UA.png",
+        "sizes": "160x160"
     }
 ]
 PWA_APP_ICONS_APPLE = [
     {
-        'scr':'apps/core/static/img/UA.png',
-        'sizes': '160x160'
+        "scr":"/static/img/UA.png",
+        "sizes": "160x160"
     }
 ]
+
+
+PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, "serviceworker.js")
