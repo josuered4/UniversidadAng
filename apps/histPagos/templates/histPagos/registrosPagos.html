@@ -2,12 +2,12 @@
 
 {% load static %}
 
-{% block title %}Registro de Pagos{% endblock %}
+
 
 {% block content %}
     <body>
         {% block body %}
-            <h1>Historial de Pagos</h1>
+            
             <div style="text-align: center;">
                 <a href="{% url 'addRegisPago'  %}"><button class="btn btn-primary" type="submit" style="font-size: 15px;">Añadir Pago</button></a>
 
@@ -17,7 +17,7 @@
             
                 <div class="container" id="contenedor">
 
-                    <h1 style="color: rgb(155, 155, 155); text-align: center;">Alumnos Registrados</h1>
+                    <h1 style="color: rgb(155, 155, 155); text-align: center;">{% block title %}Registro de Pagos{% endblock %}</h1>
                     <div class="table-responsive"> 
                     <table class="table table-dark table-hover " id="mytable">
                         <thead>
