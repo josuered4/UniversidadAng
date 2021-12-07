@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'apps.pagos',
     'apps.histPagos',
 
+    'pwa',
     
 
 ]
@@ -130,3 +131,22 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+PWA_APP_NAME = 'UniversidadAng'
+PWA_APP_DESCRIPTION = "Pagina de la Universidad de los Angeles"
+PWA_APP_THEME_COLOR ="#1c4a81"
+PWA_APP_BACKGROUND_COLOR  = "#1c4a81"
+
+PWA_APP_ICONS = [
+    {
+        'scr':'apps/core/static/img/UA.png',
+        'sizes': '160x160'
+    }
+]
+PWA_APP_ICONS_APPLE = [
+    {
+        'scr':'apps/core/static/img/UA.png',
+        'sizes': '160x160'
+    }
+]

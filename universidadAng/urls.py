@@ -24,5 +24,6 @@ urlpatterns = [
     path('', include('apps.carreras.urls')),
     path('', include('apps.pagos.urls')),
     path('', include('apps.histPagos.urls')),
+    path('',include('pwa.urls')),
     
 ]
