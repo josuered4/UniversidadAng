@@ -11,11 +11,13 @@ body{
 
 
 .container{
-margin-top: 50px;
+margin-top: 20px;
 }
+
 #contenedor{
     background: #212529;
     border-radius: 15px;
+ 
 }
 
 

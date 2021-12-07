@@ -10,13 +10,17 @@ from .forms import AlumnoForm
 def autenticacion(request):
    #Si estamos identificados devolvemos la portada
     if request.user.is_authenticated:
-        Alumnos = Alumno.objects.all()
-        Datos = {
-            'Alumnos':Alumnos
-            }
-        return render(request, "alumnos/index.html",Datos)    
+        alumno = Alumno.objects.all()
+        context = {
+            'alumnos':alumno
+        }
+    
+        return render(request, "alumnos/index.html", context)    
     # En otro caso redireccionamos al login
     return redirect('/')
+
+
+    
 
 
 def AddAlumno(request):

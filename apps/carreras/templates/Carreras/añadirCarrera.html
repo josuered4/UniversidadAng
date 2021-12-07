@@ -6,30 +6,28 @@
 
 {% block content %}
 
-<h1 style="text-align: center; color:rgb(47, 83, 47);"> Añadir Carreras</h1>
 
 
+<div class="container" id="contenedor">
 
-<!-- tabla-->
-<div style="padding: 20px 20px"> 
-<table class="table table-bordered table-striped scrol display  "  id="example" >
-    <thead class="table-dark">
+  <h1 style="color: rgb(155, 155, 155); text-align: center;">Añadir Carreras</h1>
+  <div class="table-responsive"> 
+  <table class="table table-dark table-hover " id="mytable">
+      <thead>
         <tr>
-         <th>Nombre</th>
-         <th>Cuatrimestral</th>
-         <th>Num. Cuatrimestres</th> 
-         <th>Semestral</th>
-         <th>Num. de Semestres</th>
-         <th>Opciones</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Cuatrimestral</th>
+          <th scope="col">Num. Cuatrimestres</th> 
+          <th scope="col">Semestral</th>
+          <th scope="col">Num. de Semestres</th>
+          <th scope="col">Opciones</th>
         </tr>
-    </thead>
-    <!--For para los datos en la tabla-->
-    <tbody>
+      </thead>
+      <tbody>
         {% for Carrera in Carreras %}
-        
         <tr>
-            <td>{{Carrera.Nombre}}</td>
-            {% if Carrera.Cuatrimestral == True %}
+          <th scope="row">{{Carrera.Nombre}}</th>
+          {% if Carrera.Cuatrimestral == True %}
             <td>Si</td>
             {% else %}
             <td>No</td>
@@ -46,14 +44,70 @@
             <a href="{% url 'editcarreras' Carrera.id %}"><button class="btn btn-primary" type="submit" style="font-size: 15px;">Editar</button></a> 
             <a href="{% url 'delCarrera' Carrera.id %}"><button class="btn btn-danger" type="submit" onclick="eliminar()" style="font-size: 15px;" >Eliminar</button></a> 
             </td>
-        
-         
         </tr>
-        
         {% endfor %}
-    </tbody>
-</table>
+        
+      </tbody>
+    </table>
+
+
+  </div>
+  
 </div>
+<div>
+  <br></div>
+</div>
+
+<div class="container" id="contenedor">
+
+  <h1 style="color: rgb(155, 155, 155); text-align: center;">Añadir Carrera</h1>
+  
+  <table class="table table-dark table-hover " id="mytable">
+      <thead>
+        <tr>
+        </tr>
+      </thead>
+      <tbody>
+        {% for iteam in form %}
+        <tr>
+          <th scope="row">{{iteam.name}} :</th>
+          <td>{{iteam}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+
+
+  
+</div>
+
+<div class="container" id="contenedor">
+
+  <h1 style="color: rgb(155, 155, 155); text-align: center;">Alumnos Registrados</h1>
+  <div class="table-responsive"> 
+  <table class="table table-dark table-hover " id="mytable">
+      <thead>
+      </thead>
+      <tbody>
+        {% for iteam in form %}
+        <tr>
+          <th scope="row">{{iteam.name}} :</th>
+          <td>{{iteam}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+
+  </div>
+  
+</div>
+
+
+
+
+
 
 
 <!-- solicitar datoss-->
